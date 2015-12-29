@@ -43,7 +43,7 @@ ADD index.html /srv/www/index.html
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-# - Create mount points.
+# - Define mountable directories.
 VOLUME ["/etc/nginx", "/srv/www", "/var/cache/nginx"]
 
 # - Listen on HTTP and HTTPS ports.
