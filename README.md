@@ -24,3 +24,10 @@ Run docker image:
 
     $ docker run -d -p 80:80 <image_name|container_id>
     # e.g: docker run -d -p 80:80 debian/nginx
+
+View docker logs:
+
+    $ docker logs <container_name>
+    # e.g: docker logs romantic_ride
+
+Welcome page: after a few seconds, open http://<host> (e.g: 192.168.99.100) to see the welcome page.
