@@ -18,7 +18,7 @@ Build an image from Dockerfile with the tag `debian/nginx`:
 
 List running containers:
 
-    $ docker ps [-a] # Use -a to lists all containers.
+    $ docker ps [-a]
 
 Run docker image:
 
@@ -30,7 +30,7 @@ View docker logs:
     $ docker logs <container_name>
     # e.g: docker logs romantic_ride
 
-Welcome page: after a few seconds, open http://<host> (e.g: 192.168.99.100) to see the welcome page.
+Welcome page: after a few seconds, open `http://<host>` (e.g: 192.168.99.100).
 
 Access Docker container:
 
