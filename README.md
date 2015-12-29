@@ -30,7 +30,9 @@ View docker logs:
     $ docker logs <container_name>
     # e.g: docker logs romantic_ride
 
-Welcome page: after a few seconds, open `http://<host>` (e.g: 192.168.99.100).
+Welcome page:
+
+After a few seconds, open `http://<host>` (e.g: 192.168.99.100).
 
 Access Docker container:
 
