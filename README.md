@@ -1,6 +1,6 @@
 ## Docker: Debian - NGINX
 
-**Dockerfile** of [Debian](https://www.debian.org/) - [NGINX](https://www.nginx.com/) [Docker](https://www.docker.com/) image.
+**Dockerfile** of [Debian](https://www.debian.org/) - [NGINX](https://www.nginx.com/) for trusted automated [Docker](https://www.docker.com/) builds.
 
 Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
