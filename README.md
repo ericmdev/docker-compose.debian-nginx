@@ -7,3 +7,9 @@ Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-ngin
 ### Base Docker Image
 
 - [debian:jessie](https://hub.docker.com/_/debian/)
+
+### Development
+
+Build an image from Dockerfile with the tag `debian/nginx`:
+
+    $ docker build -t="debian/nginx" -f ./Dockerfile .
