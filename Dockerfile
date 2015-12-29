@@ -4,3 +4,6 @@
 
 # - Set the base image.
 FROM debian:jessie
+
+# - Set author.
+MAINTAINER Eric Mugerwa <dev@ericmugerwa.com>
