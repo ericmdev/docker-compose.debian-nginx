@@ -2,7 +2,7 @@
 #
 # VERSION 0.0.1
 
-# - Set the base image.
+# - Pull base image.
 FROM debian:jessie
 
 # - Set author.
