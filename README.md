@@ -31,3 +31,7 @@ View docker logs:
     # e.g: docker logs romantic_ride
 
 Welcome page: after a few seconds, open http://<host> (e.g: 192.168.99.100) to see the welcome page.
+
+Access Docker container:
+
+    $ docker exec -it romantic_ride bash
