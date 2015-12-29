@@ -24,3 +24,9 @@ RUN apt-get update && \
     apt-get install -y openssl ca-certificates nginx=${NGINX_VERSION} && \
     rm -rf /var/lib/apt/lists/*
 
+# - Remove default configuration files.
+RUN rm -rf /etc/nginx/conf.d/*
+
+# - Remove `/srv/www/*`.
+RUN rm -rf /srv/www/*
+
