@@ -8,17 +8,17 @@ FROM debian:jessie
 # - Set author.
 MAINTAINER Eric Mugerwa <dev@ericmugerwa.com>
 
-# - Append NGINX stanza to `/etc/apt/sources.list`.
+# - Append nginx stanza to `/etc/apt/sources.list`.
 RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
 RUN echo "deb http://nginx.org/packages/mainline/debian/ jessie nginx" >> /etc/apt/sources.list
 
 # - Set environment variable `NGINX Version`.
 ENV NGINX_VERSION 1.9.9-1~jessie
 
-# - Update APT.
+# - Update apt.
 # - Install openssl.
 # - Install ca-certificates.
-# - Install NGINX.
+# - Install nginx.
 # - Remove "/var/lib/apt/lists/*".
 RUN apt-get update && \
     apt-get install -y openssl ca-certificates nginx=${NGINX_VERSION} && \
@@ -30,3 +30,11 @@ RUN rm -rf /etc/nginx/conf.d/*
 # - Remove `/srv/www/*`.
 RUN rm -rf /srv/www/*
 
+# - Add managed nginx.conf.
+ADD nginx.conf /etc/nginx/nginx.conf
+
+# - Add managed default.conf.
+ADD default.conf /etc/nginx/conf.d/default.conf
+
+# - Add managed www files.
+ADD index.html /srv/www/index.html
