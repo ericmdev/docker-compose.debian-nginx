@@ -49,6 +49,9 @@ VOLUME ["/etc/nginx", "/srv/www", "/var/cache/nginx"]
 # - Listen on HTTP and HTTPS ports.
 EXPOSE 80 443
 
+# - Configure executable to start nginx.
+ENTRYPOINT ["nginx"]
+
 # - Define default command.
-CMD ["nginx", "-g", "daemon off;"]
+CMD []
 
