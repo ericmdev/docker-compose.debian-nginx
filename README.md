@@ -1,6 +1,6 @@
 ## Docker: Debian - NGINX
 
-**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) for trusted automated [Docker](https://www.docker.com/) builds.
+[Docker](https://www.docker.com/) **Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
 
 Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
@@ -10,7 +10,7 @@ Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-ngin
 
 ### Development
 
-Build an image from Dockerfile with the tag `debian/nginx`:
+Build an image from the Dockerfile with the tag `debian/nginx`:
 
     $ docker build -t="debian/nginx" -f ./Dockerfile .
 
