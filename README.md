@@ -12,9 +12,7 @@
 
 ### Development
 
-**Build**
-    
-    $ docker-compose build
+        $ docker-compose build
 
 Builds the `ws` service in `docker-compose.yml`.
 
@@ -31,7 +29,5 @@ Creates and starts a container with the name `dockerdebiannginx_ws_1`.
 
     $ docker ps -a
     # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
-
-*Welcome Page*
 
 After a few seconds, open `http://<machine_ip>`.
