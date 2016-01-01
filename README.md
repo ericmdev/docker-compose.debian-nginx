@@ -13,12 +13,12 @@
 ### Development
 
 **Build**
-
-*Build `ws` service in docker-compose.yml:*
     
-    $ docker-compose build [ws]
+    $ docker-compose build
 
-This will create an image with the name `<project>_<service>` (e.g: `dockerdebiannginx_ws`) and the tag `latest`.
+Builds the `ws` service in `docker-compose.yml`.
+
+It creates an image with the name `<project>_<service>` (e.g: `dockerdebiannginx_ws`) and the tag `latest`.
 
     $ docker images
     # dockerdebiannginx_ws latest f1643e5cdd6f 2 minutes ago 133.9 MB
@@ -27,7 +27,7 @@ This will create an image with the name `<project>_<service>` (e.g: `dockerdebia
 
     $ docker-compose up -d
 
-This will create and start a container from the `dockerdebiannginx_ws` image with the name `dockerdebiannginx_ws_1`:
+Creates and starts a container with the name `dockerdebiannginx_ws_1`.
 
     $ docker ps -a
     # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
