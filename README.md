@@ -16,7 +16,7 @@
 
 Builds the `ws` service in `docker-compose.yml`.
 
-It creates an image with the name `<project>_<service>` (e.g: `dockerdebiannginx_ws`) and the tag `latest`.
+It creates an image with the name `dockerdebiannginx_ws` and the tag `latest`.
 
     $ docker images
     # dockerdebiannginx_ws latest f1643e5cdd6f 2 minutes ago 133.9 MB
