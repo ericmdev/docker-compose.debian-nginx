@@ -1,6 +1,6 @@
-## Docker: Debian - NGINX
+## Docker: Debian - NGINX Web Server
 
-**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
+**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
 
 *Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
