@@ -2,8 +2,6 @@
 
 **Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
 
-*Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
-
 *Requirements*
 - [Docker](https://www.docker.com/) 
 
