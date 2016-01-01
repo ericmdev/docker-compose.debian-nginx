@@ -4,12 +4,10 @@
 
 *Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
-**Requirements**
-
+*Requirements*
 - [Docker](https://www.docker.com/) 
 
-**Base Docker Image**
-
+*Base Docker Image:*
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
 ### Development
