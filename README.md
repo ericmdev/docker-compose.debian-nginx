@@ -1,4 +1,4 @@
-## Docker-Compose: Debian - NGINX
+## Docker: Debian - NGINX
 
 **Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
 
