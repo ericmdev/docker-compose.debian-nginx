@@ -30,4 +30,12 @@ Creates and starts a container with the name `dockerdebiannginx_ws_1`.
     $ docker ps -a
     # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
 
-After a few seconds, open `http://<machine_ip>`.
+After a few seconds, open `http://<machine_ip>:8080` to request `/var/www/index.html` - mapped to host `/volumes/var/www/index.html`.
+
+### Host mapping
+
+Volumes are mapped to host `./volumes/`:
+- `/var/cache/nginx`
+- `/var/log/nginx`
+- `/var/www/`
+

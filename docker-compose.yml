@@ -1,6 +1,6 @@
 ws:
     build: nginx-ws
-    dockerfile: ./Dockerfile
+    dockerfile: Dockerfile
     ports:
         - 8080:80
     volumes:
