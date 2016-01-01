@@ -2,11 +2,9 @@
 
 [Docker](https://www.docker.com/) **Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
 
-Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
+*Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
 ### Base Docker Image
-
-[Debian 8 "Jessie"](https://wiki.debian.org/DebianJessie) provides a small base image.
 
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
