@@ -1,6 +1,6 @@
 ## Docker: Debian - NGINX Web Server
 
-**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
+**Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
 
 *Requirements*
 - [Docker](https://www.docker.com/) 
