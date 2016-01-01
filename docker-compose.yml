@@ -1,0 +1,9 @@
+ws:
+    build: nginx-ws
+    dockerfile: ./Dockerfile
+    ports:
+        - 8080:80
+    volumes:
+        - ./volumes/var/cache/nginx/:/var/cache/nginx
+        - ./volumes/var/log/nginx/:/var/log/nginx
+        - ./volumes/var/www/:/var/www

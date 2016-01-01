@@ -12,30 +12,26 @@
 
 ### Development
 
-Build an image from the Dockerfile with the tag `debian/nginx`:
+**Build**
 
-    $ docker build -t="debian/nginx" -f ./Dockerfile .
+*Build `ws` service in docker-compose.yml:*
+    
+    $ docker-compose build [ws]
+
+This will create an image with the name `<project>_<service>` (e.g: `dockerdebiannginx_ws`) and the tag `latest`.
+
+    $ docker images
+    # dockerdebiannginx_ws latest f1643e5cdd6f 2 minutes ago 133.9 MB
 
 ### Usage
 
-List running containers:
+    $ docker-compose up -d
 
-    $ docker ps [-a]
+This will create and start a container from the `dockerdebiannginx_ws` image with the name `dockerdebiannginx_ws_1`:
 
-Run docker image:
+    $ docker ps -a
+    # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
 
-    $ docker run -d -p 80:80 <image_name|container_id>
-    # e.g: docker run -d -p 80:80 debian/nginx
+*Welcome Page*
 
-View docker logs:
-
-    $ docker logs <container_name>
-    # e.g: docker logs romantic_ride
-
-Welcome page:
-
-After a few seconds, open `http://<host>` (e.g: 192.168.99.100).
-
-Access Docker container:
-
-    $ docker exec -it romantic_ride bash
+After a few seconds, open `http://<machine_ip>`.
