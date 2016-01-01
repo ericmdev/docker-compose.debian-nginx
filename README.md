@@ -1,10 +1,14 @@
 ## Docker: Debian - NGINX
 
-[Docker](https://www.docker.com/) **Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
+**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
 
 *Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
-### Base Docker Image
+**Requirements**
+
+- [Docker](https://www.docker.com/) 
+
+**Base Docker Image**
 
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
