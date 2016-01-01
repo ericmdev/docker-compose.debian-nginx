@@ -6,6 +6,8 @@ Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-ngin
 
 ### Base Docker Image
 
+[Debian 8 "Jessie"](https://wiki.debian.org/DebianJessie) provides a small base image.
+
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
 ### Development
