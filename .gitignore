@@ -1,1 +1,4 @@
+# Volumes
+/volumes/var/cache/
+/volumes/var/log/
 /tmp/

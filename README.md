@@ -1,39 +1,40 @@
-## Docker: Debian - NGINX
+## Docker: Debian - NGINX Web Server
 
-[Docker](https://www.docker.com/) **Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/).
+**Dockerfile** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
 
-Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
+*Based on the official NGINX [Dockerfile](https://github.com/nginxinc/docker-nginx).
 
-### Base Docker Image
+*Requirements*
+- [Docker](https://www.docker.com/) 
 
+*Base Docker Image:*
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
 ### Development
 
-Build an image from the Dockerfile with the tag `debian/nginx`:
+        $ docker-compose build
 
-    $ docker build -t="debian/nginx" -f ./Dockerfile .
+Builds the `ws` service in `docker-compose.yml`.
+
+It creates an image with the name `<project>_<service>` (e.g: `dockerdebiannginx_ws`) and the tag `latest`.
+
+    $ docker images
+    # dockerdebiannginx_ws latest f1643e5cdd6f 2 minutes ago 133.9 MB
 
 ### Usage
 
-List running containers:
+    $ docker-compose up -d
 
-    $ docker ps [-a]
+Creates and starts a container with the name `dockerdebiannginx_ws_1`.
 
-Run docker image:
+    $ docker ps -a
+    # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
 
-    $ docker run -d -p 80:80 <image_name|container_id>
-    # e.g: docker run -d -p 80:80 debian/nginx
+After a few seconds, open `http://<machine_ip>:8080`.
 
-View docker logs:
+### Host Mapping
 
-    $ docker logs <container_name>
-    # e.g: docker logs romantic_ride
-
-Welcome page:
-
-After a few seconds, open `http://<host>` (e.g: 192.168.99.100).
-
-Access Docker container:
-
-    $ docker exec -it romantic_ride bash
+Volumes are mapped to host `./volumes/`.
+- `/var/cache/nginx`
+- `/var/log/nginx`
+- `/var/www/`
