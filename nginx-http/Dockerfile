@@ -1,4 +1,4 @@
-# Debian: Nginx 1.9.9
+# Debian: Nginx 1.9.9 (HTTP)
 #
 # VERSION 0.0.1
 
