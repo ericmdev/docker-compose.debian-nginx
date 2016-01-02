@@ -1,5 +1,5 @@
-ws:
-    build: nginx-ws
+http:
+    build: nginx-http
     dockerfile: Dockerfile
     ports:
         - 8080:80

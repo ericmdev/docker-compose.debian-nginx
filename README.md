@@ -1,6 +1,6 @@
-## Docker: Debian - NGINX
+## Docker: Debian - NGINX (HTTP Web Server)
 
-**Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) web server.
+**Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) HTTP web server.
 
 *Requirements*
 - [Docker](https://www.docker.com/) 
@@ -12,21 +12,21 @@
 
         $ docker-compose build
 
-Builds the `ws` service in `docker-compose.yml`.
+Builds the `http` service in `docker-compose.yml`.
 
-It creates an image with the name `dockerdebiannginx_ws` and the tag `latest`.
+It creates an image with the name `dockerdebiannginx_http` and the tag `latest`.
 
     $ docker images
-    # dockerdebiannginx_ws latest f1643e5cdd6f 2 minutes ago 133.9 MB
+    # dockerdebiannginx_http latest f1643e5cdd6f 2 minutes ago 133.9 MB
 
 ### Usage
 
     $ docker-compose up -d
 
-Creates and starts a container with the name `dockerdebiannginx_ws_1`.
+Creates and starts a container with the name `dockerdebiannginx_http_1`.
 
     $ docker ps -a
-    # ... dockerdebiannginx_ws "nginx" ... dockerdebiannginx_ws_1
+    # ... dockerdebiannginx_http "nginx" ... dockerdebiannginx_http_1
 
 After a few seconds, open `http://<machine_ip>:8080`.
 
