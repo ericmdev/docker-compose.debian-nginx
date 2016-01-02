@@ -37,24 +37,24 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 #
-# Remove default configuration files.
-#
-RUN rm -rf /etc/nginx/conf.d/*
-
-#
-# Remove `/var/www/*`.
-#
-RUN rm -rf /var/www/*
-
-#
 # Add managed nginx.conf.
 #
 ADD files/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 
 #
-# Add managed default.conf.
+# Remove default /etc/nginx/conf.d/*.
+#
+RUN rm -rf /etc/nginx/conf.d/*
+
+#
+# Add managed /etc/nginx/conf.d/default.conf.
 #
 ADD files/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+
+#
+# Remove `/var/www/*`.
+#
+RUN rm -rf /var/www/*
 
 #
 # Forward request and error logs to docker log collector.
