@@ -8,7 +8,7 @@
 FROM debian:jessie
 
 #
-# Set author.
+# Set the author.
 #
 MAINTAINER Eric Mugerwa <dev@ericmugerwa.com>
 
@@ -81,4 +81,3 @@ ENTRYPOINT ["nginx"]
 # Define default command.
 #
 CMD []
-
