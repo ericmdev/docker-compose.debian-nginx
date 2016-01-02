@@ -12,7 +12,7 @@
 
 ### Development
 
-        $ docker-compose build
+    $ docker-compose build
 
 Builds the `http` service in `docker-compose.yml`.
 
