@@ -1,5 +1,7 @@
 ## Docker: Debian - NGINX (HTTP)
 
+[![Build Status](https://travis-ci.org/ericmdev/docker.debian-nginx.svg?branch=master)](https://travis-ci.org/ericmdev/docker.debian-nginx)
+
 **Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) HTTP web server.
 
 *Requirements*
