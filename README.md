@@ -35,6 +35,10 @@ Creates and starts a container with the name `dockerdebiannginx_http_1`.
 
 After a few seconds, open `http://<machine_ip>:8080`.
 
+Access the Bash shell:
+
+    $ docker exec -it dockerdebiannginx_http_1 bash
+
 ### Host Mapping
 
 Volumes are mapped to host `./volumes/`.
