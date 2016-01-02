@@ -1,4 +1,4 @@
-## Docker: Debian - NGINX (HTTP Web Server)
+## Docker: Debian - NGINX (HTTP)
 
 **Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) HTTP web server.
 
