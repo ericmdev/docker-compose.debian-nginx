@@ -1,4 +1,4 @@
-# Debian: Nginx 1.9.9
+# Debian: Nginx 1.9.9 (HTTP)
 #
 # VERSION 0.0.1
 
@@ -8,7 +8,7 @@
 FROM debian:jessie
 
 #
-# Set author.
+# Set the author.
 #
 MAINTAINER Eric Mugerwa <dev@ericmugerwa.com>
 
@@ -81,4 +81,3 @@ ENTRYPOINT ["nginx"]
 # Define default command.
 #
 CMD []
-

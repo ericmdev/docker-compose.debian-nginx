@@ -7,12 +7,15 @@
 *Requirements*
 - [Docker](https://www.docker.com/) 
 
-*Base Docker Image:*
+*Base Docker Image*
 - [debian:jessie](https://hub.docker.com/_/debian/)
+
+*Process*
+- NGINX (1.9.9)
 
 ### Development
 
-        $ docker-compose build
+    $ docker-compose build
 
 Builds the `http` service in `docker-compose.yml`.
 
@@ -31,6 +34,10 @@ Creates and starts a container with the name `dockerdebiannginx_http_1`.
     # ... dockerdebiannginx_http "nginx" ... dockerdebiannginx_http_1
 
 After a few seconds, open `http://<machine_ip>:8080`.
+
+Access the Bash shell:
+
+    $ docker exec -it dockerdebiannginx_http_1 bash
 
 ### Host Mapping
 
