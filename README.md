@@ -17,7 +17,7 @@
 
     $ docker-compose up -d
 
-Creates and starts the services in `docker-compose.yml`.
+Creates and starts the service in `docker-compose.yml`.
 
 After a few seconds, open `http://<machine_ip>:8080` to see the default page `"Hello, Docker!"`.
 
