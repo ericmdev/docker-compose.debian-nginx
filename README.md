@@ -1,6 +1,6 @@
-## Docker: Debian - NGINX (HTTP)
+## Docker-Compose: Debian - NGINX (HTTP)
 
-[![Build Status](https://travis-ci.org/ericmdev/docker.debian-nginx.svg?branch=master)](https://travis-ci.org/ericmdev/docker.debian-nginx)
+[![Build Status](https://travis-ci.org/ericmdev/docker-compose.nginx.svg?branch=master)](https://travis-ci.org/ericmdev/docker-compose.nginx)
 
 **Docker orchestration** of [Debian](https://www.debian.org/) [NGINX](https://www.nginx.com/) HTTP web server.
 
