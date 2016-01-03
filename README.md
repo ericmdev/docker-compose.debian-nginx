@@ -17,37 +17,25 @@
 
     $ docker-compose up -d
 
-Creates and starts a container with the name `dockerdebiannginx_http_1`.
+Creates and starts the services in `docker-compose.yml`.
 
-    $ docker ps -a
-    # ... dockerdebiannginx_http "nginx" ... dockerdebiannginx_http_1
-
-After a few seconds, open `http://<machine_ip>:8080`.
-
-Access the Bash shell:
-
-    $ docker exec -it dockerdebiannginx_http_1 bash
+After a few seconds, open `http://<machine_ip>:8080` to see the default page `"Hello, Docker!"`.
 
 ### Development
 
     $ docker-compose build
 
-Builds the `http` service in `docker-compose.yml`.
-
-It creates an image with the name `dockerdebiannginx_http` and the tag `latest`.
-
-    $ docker images
-    # dockerdebiannginx_http latest f1643e5cdd6f 2 minutes ago 133.9 MB
+Builds the service in `docker-compose.yml`.
 
 ### Vagrant
 
     $ vagrant up
 
-Now visit `192.168.33.62`.
+Open `http://192.168.33.62`.
 
-The Vagrantfile uses the [vagrant-docker-compose](https://github.com/leighmcculloch/vagrant-docker-compose) plugin for Vagrant.
-
-    $ vagrant plugin install vagrant-docker-compose
+*Plugins*
+- [vagrant-docker-compose](https://github.com/leighmcculloch/vagrant-docker-compose)
+    - `$ vagrant plugin install vagrant-docker-compose`
 
 ### Host Mapping
 
